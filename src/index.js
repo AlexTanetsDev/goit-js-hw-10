@@ -56,7 +56,7 @@ refs.countryInfo.innerHTML = countryCardMarkup;
 return `<li>
 <div class="country-box"> 
 <img class="country-flag" src="${flags.svg}" alt="flag of ${name.official}">
-<h3 class="list-country-name">${name}</h3>
+<h3 class="list-country-name">${name.common}</h3>
 </div>
 </li>`
   }
@@ -66,7 +66,7 @@ return `<li>
 return `<div class="county-card">
 <div class="country-box"> 
   <img class="country-flag" src="${flags.svg}" alt="flag of ${name.official}">
-  <h2 class="list-country-name">${name}</h2>
+  <h2 class="list-country-name">${name.common}</h2>
   </div>
   <p>
   <strong>Capital:</strong>
