@@ -38,6 +38,8 @@ refs.input.addEventListener('input', debounce(onInputChange, 300))
       
     })
     .catch((error) => {
+      refs.countryInfo.innerHTML="";
+        refs.countryList.innerHTML='';
       Notiflix.Notify.failure("Oops, there is no country with that name");
     });
   }
